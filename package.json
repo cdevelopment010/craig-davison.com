@@ -1,0 +1,26 @@
+{
+  "name": "craig-davison.com",
+  "version": "1.0.0",
+  "description": "Personal Website that will host portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch ./scss  -o ./css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdevelopment010/craig-davison.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdevelopment010/craig-davison.com/issues"
+  },
+  "homepage": "https://github.com/cdevelopment010/craig-davison.com#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "normalize-scss": "^7.0.1",
+    "sass": "^1.43.4"
+  }
+}
