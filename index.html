@@ -27,29 +27,117 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
 
     <!-- custom CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body>
     
-    <main>
-        <h1 class="comingSoon">Coming soon</h1>
-
-        <div class="nameJob">
-            <h3 class="name">Craig Davison</h3>
-            <h3 class="job">Web Developer</h3>
+    <header>
+        <div class="logo">
+            <a href="./index.html">Craig Davison</a>
         </div>
-    
-        <form autocomplete="off" action="https://formsubmit.co/df600eff0ca76a32ab52ff61a446ac43 " method="POST">
-    
-            <h4>Get in touch</h4>
-            <input type="email" name="email" required placeholder="Email Address">
-            <input type="hidden" name="_subject" value="ComingSoon Contact Form">
-            <textarea name="message" placeholder="Your message"></textarea>
-            <button type="submit">Send</button>
-       </form>
+        <nav>
+            <div class="burgerBar" id="burgerBar">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="navbar hidden" id="navigation">
+                <li><a href="./index.html" rel="noopener noreferrer">Home</a></li>
+                <li><a href="./about.html" rel="noopener noreferrer">About</a></li>
+                <li><a href="./contact.html" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home-main">
+        <section class="hero">
+            <h1>
+                I'm <span class="callOut">Craig</span>, <br>
+                A <span class="callOut">Front-End</span> Web Developer <br>
+                from <span class="callOut">Durham</span>, England
+            </h1>
+            <img src="./images/ProfilePic.JPG">
+        </section>
+
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <i class="fab fa-html5 fa-5x"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3 fa-5x"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js fa-5x"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-sass fa-5x"></i>
+                <p>SCSS</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-bootstrap fa-5x"></i>
+                <p>Bootstrap</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-figma fa-5x"></i>
+                <p>Figma</p>
+            </div>
+        </section>
+
+
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <a href="https://cdevelopment010.github.io/WebDevJourney/Week10/FEM/TipCalc/" target="_blank">
+                <div class="portfolio-item">
+                    <img src="./images/TipCalc.png" alt="">
+                    <h3>Tip Calculator</h3>
+                    <p>frontEndMentor.io challenge using HTML, CSS/SCSS and JavaScript.</p>
+                </div>
+            </a>
+            <a href="https://cdevelopment010.github.io/WebDevJourney/Week10/FEM/TipCalc/" target="_blank">
+                <div class="portfolio-item">
+                    <img src="./images/TipCalc.png" alt="">
+                    <h3>Tip Calculator</h3>
+                    <p>frontEndMentor.io challenge using HTML, CSS/SCSS and JavaScript.</p>
+                </div>
+            </a>
+            <a href="https://cdevelopment010.github.io/WebDevJourney/Week10/FEM/TipCalc/" target="_blank">
+                <div class="portfolio-item">
+                    <img src="./images/TipCalc.png" alt="">
+                    <h3>Tip Calculator</h3>
+                    <p>frontEndMentor.io challenge using HTML, CSS/SCSS and JavaScript.</p>
+                </div>
+            </a>
+            <a href="https://cdevelopment010.github.io/WebDevJourney/Week10/FEM/TipCalc/" target="_blank">
+                <div class="portfolio-item">
+                    <img src="./images/TipCalc.png" alt="">
+                    <h3>Tip Calculator</h3>
+                    <p>frontEndMentor.io challenge using HTML, CSS/SCSS and JavaScript.</p>
+                </div>
+            </a>
+        </section>
 
     </main>
+
+    <footer>
+        <ul>
+            <li><a href="https://github.com/cdevelopment010/" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.freecodecamp.org/cdavison" target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCtHK20C4Dw4fcs7kZDl4QPQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </footer>
     
+
+    
+    <!-- Script -->
+    <script src="./JS/main.js"></script>
 
 </body>
 </html>

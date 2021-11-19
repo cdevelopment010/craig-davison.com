@@ -18,21 +18,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="We create web pages for local businesses to help drive traffic to their sites. Please get in touch if you want to discuss getting your site built.">
     <meta name="keywords" content="Web Developer, North East, Consett, Web Developer North East">
-    <title>About | Craig Davison</title>
+    <title>Craig Davison</title>
 
-    <!-- Google Fonts -->
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-
-    <!-- Custom CSS -->
+    <!-- custom CSS -->
     <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body>
     
+
     <header>
         <div class="logo">
             <a href="./index.html">Craig Davison</a>
@@ -51,31 +53,23 @@
         </nav>
     </header>
 
+    <main id="contact-main">
+        <h1 class="comingSoon">Contact</h1>
 
-    <main id="about-main">
-        <h1>About</h1>
+        <div class="nameJob">
+            <p>Please feel free to get in touch using the below form!</p>
+        </div>
+    
+        <form autocomplete="off" action="https://formsubmit.co/df600eff0ca76a32ab52ff61a446ac43 " method="POST">
+    
+            <input type="email" name="email" required placeholder="Email Address">
+            <input type="hidden" name="_subject" value="ComingSoon Contact Form">
+            <textarea name="message" placeholder="Your message"></textarea>
+            <button type="submit">Send Message</button>
+       </form>
 
-        <section class="main-about">
-            <h3><span class="callOut">Front-end</span> Web Developer</h3> 
-            <h3>Lover of <span class="callOut">Dark Chocolate</span></h3> 
-            <h3><span class="callOut">Skier &amp; Snowboarder</span></h3>
-            <h3>Devourer of <span class="callOut">Books</span></h3>
-        </section>
-
-        <section class="about-img">
-            <img src="./images/Uke.JPG" alt="Profile Picture">
-        </section>
-
-        <section class="about-long">
-            <p>Hello! I focus on HTML, CSS and JavaScript to build custom websites.</p>
-            <p>I enjoy learning new skills, and every month I set myself a challenge. Currently I am trying to wake up at 5am! </p>
-            <p>My love of learning is why I enjoy web development, there is always something I can improve upon or a new skill to learn.</p>
-            <p>See my YouTube channel (<a href="https://www.youtube.com/channel/UCtHK20C4Dw4fcs7kZDl4QPQ/featured" target="_blank" rel="noopener noreferrer">link to channel</a>) which shows my web development journey &amp; my monthly challanges.</p>
-            <p>I have a background in Mathematics (1st class honors) and Data Analytics - using tools such as; SQL, R and VBA.</p>
-        </section>
     </main>
-
-
+    
 
     <footer>
         <ul>
@@ -85,10 +79,10 @@
         </ul>
     </footer>
 
-
-
-
+       
     <!-- Script -->
     <script src="./JS/main.js"></script>
+
+
 </body>
 </html>
