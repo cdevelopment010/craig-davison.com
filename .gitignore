@@ -15,7 +15,7 @@ node_modules/@fortawesome/*
 !/node_modules/normalize-scss/sass/
 !/node_modules/@fortawesome/fontawesome-free/
 
-/node_modules/normalize-scss/sass/normalize/*
+#/node_modules/normalize-scss/sass/normalize/*
 /node_modules/@fortawesome/fontawesome-free/*
 
 
