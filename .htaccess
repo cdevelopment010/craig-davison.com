@@ -1,3 +1,13 @@
+# mod_rewrite starts here
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+#Check it isn't a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#Check for file in directory with .html extension
+RewriteCond %{REQUEST_FILENAME}\.html !-f
+
+#Below we actually show the page with .html extension
+# NC - none case - uppper/lowercase doesn't matter
+# L - conditions above only apply to the RewriteRule
+RewriteRule ^(.*)$ $1.html [NC,L]
