@@ -1,27 +1,23 @@
 {
-  "name": "craig-davison.com",
+  "name": "test-area",
   "version": "1.0.0",
-  "description": "Personal Website that will host portfolio",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass --watch ./scss  -o ./css --output-style compressed"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cdevelopment010/craig-davison.com.git"
+    "watch": "webpack --watch",
+    "build": "webpack -mode=production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cdevelopment010/craig-davison.com/issues"
-  },
-  "homepage": "https://github.com/cdevelopment010/craig-davison.com#readme",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "node-sass": "^6.0.1",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "normalize": "^0.3.1",
     "normalize-scss": "^7.0.1",
-    "sass": "^1.43.4"
+    "sass": "^1.49.11",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.9.2"
   }
 }
