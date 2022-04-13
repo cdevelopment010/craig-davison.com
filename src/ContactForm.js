@@ -7,7 +7,7 @@ export default function ContactForm() {
     
 
     form.autocomplete = "off"; 
-    form.action = "https://formsubmit.co/cdevelopment010@gmail.com"; 
+    form.action = "https://formsubmit.co/df600eff0ca76a32ab52ff61a446ac43"; 
     form.method = "POST"; 
 
     email.type='email'; 
