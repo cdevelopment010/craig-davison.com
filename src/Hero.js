@@ -14,7 +14,7 @@ export default function Hero() {
     img1.className = 'hex hex-1';
     img2.className = 'hex hex-2';
     img3.className = 'hex hex-3';
-    profileImage.src = '../images/edited-profile-pic.png';
+    profileImage.src = './images/edited-profile-pic.png';
 
     heroImage.append(img1);
     heroImage.append(img2);

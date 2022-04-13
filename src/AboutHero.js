@@ -13,7 +13,7 @@ export default function AboutHero() {
         Devourer of <span class="call-out">Books</span>
         `; 
 
-    image.src = '../images/Uke.JPG'
+    image.src = './images/Uke.JPG'
 
     container.append(title); 
     container.append(image); 

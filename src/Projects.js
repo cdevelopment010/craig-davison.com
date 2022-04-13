@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
     const projectContainer = document.createElement('section'); 
     const title = document.createElement('h2'); 
-    const imageLoc = '../images/'
+    const imageLoc = './images/'
 
 
     title.innerText = 'Projects'; 
