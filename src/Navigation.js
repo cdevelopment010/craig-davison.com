@@ -10,6 +10,9 @@ export default function Navigation(currPage) {
     const home = document.createElement('li');
     const contact = document.createElement('li');
     const about = document.createElement('li');
+    const homeLink = document.createElement('a');
+    const aboutLink = document.createElement('a');
+    const contactLink = document.createElement('a');
 
     switch (currPage) {
         case 'home': 
@@ -25,7 +28,7 @@ export default function Navigation(currPage) {
             return 'ERROR'; 
     }
 
-    [home, contact, about].forEach(navItem => {
+    [homeLink, contactLink, aboutLink].forEach(navItem => {
         navItem.addEventListener('click', function() {
             let page = this.innerText+'Page'; 
             navigate(page);
@@ -33,9 +36,12 @@ export default function Navigation(currPage) {
     })
 
 
-    home.innerText = 'Home'; 
-    contact.innerText = 'Contact'; 
-    about.innerText = 'About'; 
+    homeLink.innerText = 'Home';
+    home.append(homeLink)
+    contactLink.innerText = 'Contact';
+    contact.append(contactLink)
+    aboutLink.innerText = 'About';
+    about.append(aboutLink)
     ul.append(home);
     ul.append(about);
     ul.append(contact);
